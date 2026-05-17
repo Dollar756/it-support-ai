@@ -140,4 +140,9 @@ def main(page: ft.Page):
     )
 
 
-ft.run(target=main, view=ft.AppView.WEB_BROWSER)
+ft.run(
+    ft.app(
+        target=main,
+        view=ft.AppView.WEB_BROWSER,
+    )
+)
